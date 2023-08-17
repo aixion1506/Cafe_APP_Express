@@ -27,7 +27,7 @@ class CoffeeMenuService {
   getMenus() {
     const menus = this.storage.getAll();
     if (menus.length === 0) {
-      throw new Error('아직 카페 ');
+      throw new Error('아직 카페가 오픈 전이에요. 잠시 후 다시 주문해주세요. ');
     }
   }
 }
